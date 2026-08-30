@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	// ---- GALAXY BONES : nothing here but the sky ------------------------
+	// The basetexture is flat near-black on purpose. Any UV-mapped texture
+	// tiles and travels with the body, which reads as a pattern crawling
+	// over him instead of a view through him - so there isn't one. There
+	// are no scrolling proxies and no detail layer either.
+	//
+	// Everything you see on the bones is $envmap: a cubemap fixed in world
+	// space at infinite distance. It does not move when he moves, it does
+	// not repeat, and it never loops. Turning him changes which part of the
+	// sky lines up behind the bones, exactly like looking through a hole.
+	"$basetexture"      "models/gxskel/gxvoid"
+	"$surfaceprop"      "Bloodyflesh"
+	"$model"            "1"
+	"$nodecal"          "1"
+
+	"$envmap"           "models/gxskel/gxbone_cube"
+	"$envmaptint"       "[1.20 3.75 1.40]"
+	"$envmapcontrast"   "0.0"
+	"$envmapsaturation" "1.05"
+	"$color2"           "[0.65 1.25 0.60]"
+}
